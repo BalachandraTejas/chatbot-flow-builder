@@ -1,0 +1,9 @@
+.app-content {
+  display: flex;
+  height: calc(100vh - var(--topbar-height));
+}
+.app-sidepanel {
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--topbar-height));
+  border: #ccc 1px solid;
+}

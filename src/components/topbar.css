@@ -1,0 +1,14 @@
+.topbar {
+  height: var(--topbar-height);
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+}
+.top-toast-panel {
+  width: calc(100% - var(--sidebar-width));
+  text-align: center;
+}
+.top-side-panel {
+  width: var(--sidebar-width);
+  text-align: center;
+}
