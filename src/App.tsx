@@ -1,3 +1,4 @@
+import React from 'react';
 import 'reactflow/dist/style.css';
 import FlowPanel from './components/FlowPanel';
 import SidePanel from './components/SidePanel';

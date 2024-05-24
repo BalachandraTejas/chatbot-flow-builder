@@ -1,12 +1,14 @@
-import { useCallback } from 'react';
+import React, { useCallback } from 'react';
 import ReactFlow, {
   Controls,
   useNodesState,
   useEdgesState,
   addEdge,
+  Node,
+  Edge,
 } from 'reactflow';
 
-const initialNodes = [
+const initialNodes: Node[] = [
   {
     id: '1',
     type: 'input',
@@ -28,7 +30,7 @@ const initialNodes = [
   },
 ];
 
-const initialEdges = [
+const initialEdges: Edge[] = [
   { id: 'e1-2', source: '1', target: '2' },
   { id: 'e2-3', source: '2', target: '3', animated: true },
 ];
