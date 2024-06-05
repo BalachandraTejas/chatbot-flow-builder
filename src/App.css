@@ -5,5 +5,136 @@
 .app-sidepanel {
   width: var(--sidebar-width);
   height: calc(100vh - var(--topbar-height));
-  border: #ccc 1px solid;
+  border: var(--sidebar-border-grey) 1px solid;
+}
+
+.react-flow {
+  width: calc(100% - var(--sidebar-width));
+}
+
+.topbar {
+  height: var(--topbar-height);
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+}
+.top-toast-panel {
+  width: calc(100% - var(--sidebar-width));
+  text-align: center;
+}
+.top-side-panel {
+  width: var(--sidebar-width);
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-toast-panel span {
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.message-node {
+  width: 220px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.message-node .message-header {
+  border-radius: 5px 5px 0 0;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #b1f1e3;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 22px;
+}
+
+.message-node .message-text {
+  font-size: 12px;
+  padding: 8px;
+  overflow-wrap: break-word;
+}
+
+.message-node .chat-icon {
+  height: 10px;
+  padding-right: 4px;
+}
+
+.message-node .whatsapp-icon {
+  display: flex;
+  align-items: center;
+  background-color: #ebfffa;
+  justify-content: center;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+.message-node .whatsapp-icon > img {
+  height: 10px;
+  align-items: flex-end;
+}
+
+.btn-save {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 25px;
+  background-color: #fff;
+  border: 2px solid var(--highlight-blue);
+  color: var(--highlight-blue);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.conponent-type {
+  border: 1px solid var(--highlight-blue);
+  padding: 12px 25px;
+  color: var(--highlight-blue);
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  margin: 10px;
+  border-radius: 4px;
+}
+.conponent-type img {
+  height: 20px;
+}
+
+.react-flow__node.selectable.selected {
+  box-shadow: 0 0 0 2px var(--highlight-blue);
+  border-radius: 5px;
+}
+
+.settings-panel-header {
+  display: flex;
+  align-items: center;
+  /* height: 30px; */
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid var(--sidebar-border-grey);
+}
+.settings-panel-header img {
+  height: 12px;
+  cursor: pointer;
+}
+.settings-panel-body {
+  border-bottom: 1px solid var(--sidebar-border-grey);
+  padding: 10px;
+}
+.settings-panel-body .text-label {
+  color: var(--sidebar-border-grey);
+  padding-bottom: 5px;
+}
+.settings-panel-body textarea {
+  width: 100%;
+  border: 1px solid var(--sidebar-border-grey);
+  border-radius: 5px;
 }

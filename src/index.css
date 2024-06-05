@@ -1,11 +1,11 @@
 :root {
   --sidebar-width: 300px;
   --topbar-height: 55px;
+  --highlight-blue: #1f40c2;
+  --sidebar-border-grey: #dadada;
 }
 body {
   margin: 0;
-  /* display: flex;
-  place-items: center;
-  min-width: 320px; */
   min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
